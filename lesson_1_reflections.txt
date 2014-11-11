@@ -1,0 +1,77 @@
+Q: How did viewing a diff between two versions of a file help you see the bug that was
+introduced?
+
+A: By viewing what was changed I was able to see exactly when/where in the code that the
+bug was introduced. 
+
+On Unix we use this command: diff -u oldfile newfile
+
+Once diff is run the file with the --- is the oldfile and the +++ is the newfile
+Every line with a - is one that was in the oldfile but NOT in the new one.
+Every line with a + is one that was NOT in the oldfile but IS in the new one.
+
+
+
+
+Q: How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+
+A: You can see what changes you made and what changes correlate to different 
+functionalities. You could also start to observe the general patterns that you 
+usually follow throughout a project's lifecycle. By observing these patterns you 
+can gradually master and fine tune a "go-to" workflow. 
+
+
+Notes:
+VCS and SVN are similar. (can't use these offline) 
+Mercurial and Git are similar. (can use these offline)
+User saves are called commits. They are the basic building blocks of git. 
+When a user commits they leave a commit message so that you can see what was 
+the purpose of the change. 
+
+
+
+Q: What do you think are the pros and cons of manually choosing when to create
+a commit, like you do in Git, vs having versions automatically saved, like
+with Google docs?
+
+A:The pros of this system is that you can clearly and logically separate
+commits. This makes going back and revisiting old versions easier because you
+know the logical AND the semantic differences. The major con in this system
+is that you have to really get the hang of doing logical commits. This requires
+a bit of foresight and extra planning when working on a project.
+
+
+
+Q: Why do you think some version control systems, like Git, allow saving
+multiple files in one commit, while others, like Google Docs, treat each file
+separately.
+
+A: Because people who use git are trying to track changes across multiple
+files. These files need to be tracked because they are often interrelated.
+For example, if you change a character's name in a book you want all the
+chapters of the book to reflect that change.
+
+
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+A: You can use git log to view the history of commits and the comments associated
+with each commit. You can use git diff to view the difference between two commits,
+or two different versions of the same document.
+
+
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: It will make me more confident because I know that I can always roll back to a version that was
+previously working.
+
+
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+A: I want to use git to create production ready projects. Some of these projects may
+be used as part of business ventures and others may be open source ventures. Sometimes I may
+use git to work on test/dummy projects that I am using to learn new tech.
