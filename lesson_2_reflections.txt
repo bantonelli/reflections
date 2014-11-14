@@ -4,6 +4,8 @@ A: When you initialize a repository you tell git that this directory and all of 
 of it should be tracked. You should do this whenever you start a project that you want to
 have version control support.
 
+
+
 Q: How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
@@ -11,3 +13,44 @@ A: The staging area is different because it only contains the files that you add
 Where as the working directory contains all of the files inside. The value in the staging area
 is that you are able to isolate only the files you wish to change. This gives you a clear cut
 focus when working on a big project with many files.
+
+
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+
+A: You can make sure that only the files associated with that particular feature are in the staging
+area. Therefore you only make changes that are associated with one particular piece of logic.
+
+
+
+Q: What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+
+A: You can create branches that reflect the adding new functionality to your project. Each branch
+could be its own new feature that was developed and eventually added to the master branch.
+Over time you could see how your app has developed by seeing which branches were implemented.
+
+
+
+Q: How do the diagrams help you visualize the branch structure?
+
+A: The diagrams help because it is hard to know when you are at an unreachable commit.
+It's also nice to have a diagram to easily see which features will be included in the app if
+you happen to checkout any particular commit.
+
+
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A: When you merge two branches they share all of the code added and deleted by both branches. The
+branch that you are currently on becomes the head of the new merged branch. The branch tag for the
+second branch stays around but you can delete it using git branch -d <name of branch>.
+
+
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A: Pros of automatic is that it saves you a big hassle of deciding which code to keep.
+    The cons of automatic is that it doesn't and can't always work.
+
+

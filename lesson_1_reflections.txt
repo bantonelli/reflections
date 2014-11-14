@@ -75,3 +75,8 @@ Q: Now that you have your workspace set up, what do you want to try using Git fo
 A: I want to use git to create production ready projects. Some of these projects may
 be used as part of business ventures and others may be open source ventures. Sometimes I may
 use git to work on test/dummy projects that I am using to learn new tech.
+
+
+
+
+
